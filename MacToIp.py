@@ -4,4 +4,4 @@ def MacIp(mac):
     ip=shell_output.split()[0].decode("utf-8")
     return ip
 
-#'"e0-dc-ff-08-12-0e"'   #MODEL
+#'"e0-dc-ff-08-12-0e"'   #EXAMPLE
