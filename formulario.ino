@@ -20,8 +20,9 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 //===============================================================
 const char* ssid = "REDJAM-2.4G-W23H";
 const char* password = "pepito777";
+const int port = 80;
 
-ESP8266WebServer server(80); 
+ESP8266WebServer server(port); 
 
 //===============================================================
 // Formulario Principal.
@@ -48,8 +49,7 @@ void text() {
  server.send(200, "text/html", "<meta http-equiv='refresh' content='0;URL=/' />"); //Redirección a la página principal
 }
 //==============================================================
-
-
+//==============================================================
 
 void setup(void){
   Serial.begin(9600);
