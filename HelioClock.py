@@ -2,7 +2,7 @@ import time
 #------------------
 import FormPeticion
 
-ESP8266_Bracelet_Mac='"fc-f5-c4-ac-e8-f2"'
+ESP8266_Bracelet_Mac='"your_bracelet_mac"'
 FormPeticion.fInit(ESP8266_Bracelet_Mac)
 
 def clock():
